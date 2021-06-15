@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus KeepUp - Home</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="chart.min.js"></script>
+    <script src="chart.js"></script>
 </head>
+
 <body>
     <div class="navbar">
         <a href="index.html">
-            <img class="navbar__logo" src="data/KeepUpLogo.png" alt="logo" /></a>
+            <img class="navbar__logo navbar__logo-home" src="data/KeepUp-logo.png" alt="logo" /></a>
+            <p id="user-name">...</p>
         <div class="navbar__btns">
             <a href="" class="signOut">Cerrar sesión</a>
         </div>
     </div>
 
+    <form class="form new-class">
+
+        <label class="form__label">
+            <input id="class-name" required type="text" name="className" placeholder="Nombre de la clase" />
+        </label>
+
+        <label class="form__label">
+            <input id="class-ID" required type="text" name="classID" placeholder="Class ID" />
+        </label>
+
+        <button id="class-btn" class="form__btn" type="submit">
+            CONTINUAR
+        </button>
+    </form>
+
+
+    <div class="classes">
+        <h2 id="classes-title">Tus clases</h2>
+        <div id="classes-container">
+
+
+
+        </div>
+    </div>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
+
 </html>
 
 
@@ -25,3 +95,5 @@
 
 <script src="scripts/firebase.js"></script>
 <script src="scripts/signOut.js"></script>
+<script src="scripts/uClass.js"></script>
+<script src="scripts/index.js"></script>

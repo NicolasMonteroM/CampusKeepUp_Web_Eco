@@ -258,7 +258,7 @@ input[type=button] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 20vh;
+  height: 15vh;
 }
 
 .navbar__logo {
@@ -266,6 +266,14 @@ input[type=button] {
   left: 50px;
   top: 50px;
   height: 100px;
+  width: auto;
+}
+
+.navbar__logo-home {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 30px;
   width: auto;
 }
 
@@ -299,6 +307,17 @@ input[type=button] {
   color: white;
   border: 0 !important;
   background-color: #BBC53C;
+}
+
+.navbar a {
+  color: #ff7b00;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+#user-name {
+  padding-right: 10px;
 }
 
 .content {
