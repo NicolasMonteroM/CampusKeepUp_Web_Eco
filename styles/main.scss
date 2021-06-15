@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+$font: "Quicksand", sans-serif;
+
+@import "reset";
+@import "navbar";
+@import "home";
+
+body {
+    background-image: url("/data/CampusBG.png");
+    height: 100vh; /* You must set a specified height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

@@ -1,0 +1,33 @@
+.content{
+
+    h1{
+
+        font-weight: bold;
+        font-size: 30px;
+        font-family: $font;
+        color: #2A3459;
+
+    }
+
+    padding: 50px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__info{
+        
+        float:left;
+        height: 100%;
+        width:50%;
+    }
+
+    &__illustration{
+        float:right;
+        height: 100%;
+        width:100%;
+
+    }
+    
+}
