@@ -6,11 +6,17 @@ class uClass {
     }
 
     render = () => {
+
         let component = document.createElement('div');
+        const url = `uClass.html?${this.uClass.classID}`;
+        component.setAttribute('href', url);
+
         component.innerHTML = `
         <div class="classes__class" >
             <p class="classes__name">
-                ${this.uClass.name}
+            <a href="${url}">
+            ${this.uClass.name}
+            </a>
             </p>
 
             <p class="classes__classID">
