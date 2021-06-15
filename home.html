@@ -15,30 +15,17 @@
     <div class="navbar">
         <a href="index.html">
             <img class="navbar__logo navbar__logo-home" src="data/KeepUp-logo.png" alt="logo" /></a>
-            <p id="user-name">...</p>
         <div class="navbar__btns">
+            <button onclick="window.location.href='adClass.html'" id="register-btn" class="navbar__btn">
+                NUEVA CLASE
+            </button>
             <a href="" class="signOut">Cerrar sesión</a>
         </div>
     </div>
 
-    <form class="form new-class">
-
-        <label class="form__label">
-            <input id="class-name" required type="text" name="className" placeholder="Nombre de la clase" />
-        </label>
-
-        <label class="form__label">
-            <input id="class-ID" required type="text" name="classID" placeholder="Class ID" />
-        </label>
-
-        <button id="class-btn" class="form__btn" type="submit">
-            CONTINUAR
-        </button>
-    </form>
-
-
     <div class="classes">
-        <h2 id="classes-title">Tus clases</h2>
+        <p id="user-name">...</p>
+        <h1 id="classes-title">Tus clases</h2>
         <div id="classes-container">
 
 
@@ -46,6 +33,11 @@
         </div>
     </div>
 
+    <img id="icesi-logo" src="data/icesi-logo.png" alt="icesi-logo" />
+
+    <!--
+
+    
     <canvas id="myChart" width="400" height="400"></canvas>
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
@@ -83,7 +75,7 @@
                 }
             }
         });
-    </script>
+    </script>-->
 
 </body>
 

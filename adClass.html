@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus KeepUp - New class</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html">
+            <img class="navbar__logo navbar__logo-home" src="data/KeepUp-logo.png" alt="logo" /></a>
+        <div class="navbar__btns">
+            <a href="" class="signOut">Cerrar sesión</a>
+        </div>
+    </div>
+
+    <img id="bg-lines" src="data/lines.png"/>
+
+    <div class="content">
+        <a href="home.html">
+            <svg class="content__back" style="" width="18.421875" height="15.421875" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.421875 6.703125 L3.843750 6.703125 L9.117188 1.406250 L7.710938 -0.000000 L0.000000 7.710938 L7.710938 15.421875 L9.117188 14.015625 L3.843750 8.718750 L18.421875 8.718750 Z M21.421875 18.210938"
+                    style="fill:#586286" />
+            </svg>
+        </a>
+        <div class="content__info">
+            <h1 class="content__title">Agregar clase</h1>
+
+            <form id="new-class-form" class="form new-class">
+
+                <label class="form__label">
+                    <input id="class-name" required type="text" name="className" placeholder="Nombre de la clase" />
+                </label>
+
+                <label class="form__label">
+                    <input id="class-ID" required type="text" name="classID" placeholder="Class ID" />
+                </label>
+
+                <button id="class-btn" class="form__btn" type="submit">
+                    CONTINUAR
+                </button>
+            </form>
+        </div>
+
+        <div class="content__illustrationcontainer">
+            <img class="content__illustration" src="data/illustration_2.png" alt="logo" />
+        </div>
+    </div>
+
+    <img id="icesi-logo" src="data/icesi-logo.png" alt="icesi-logo" />
+
+</body>
+
+</html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
+
+<script src="scripts/firebase.js"></script>
+<script src="scripts/createClass.js"></script>
+<script src="scripts/signOut.js"></script>

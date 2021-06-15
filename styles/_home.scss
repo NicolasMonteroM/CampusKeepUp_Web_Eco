@@ -1,5 +1,4 @@
 .content {
-
     padding: 50px;
     position: relative;
     width: 100%;
@@ -38,6 +37,19 @@
     &__image {
         width: 150px;
     }
+
+    &__back {
+        position: absolute;
+
+        top: 100px;
+    }
+}
+
+#bg-lines {
+    right: 130px;
+    top: -350px;
+    position: absolute;
+    width: 500px;
 }
 
 #icesi-logo {

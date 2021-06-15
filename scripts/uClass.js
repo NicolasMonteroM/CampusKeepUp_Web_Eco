@@ -14,7 +14,7 @@ class uClass {
             </p>
 
             <p class="classes__classID">
-                ${this.uClass.classID}
+                ID de la clase: <strong>${this.uClass.classID}</strong>
             </p>
         </div>
         `;
