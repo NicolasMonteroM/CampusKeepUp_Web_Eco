@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus KeepUp - Register</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">
+            <img class="navbar__logo" src="data/KeepUpLogo.png" alt="logo" /></a>
+        <div class="navbar__btns">
+            <button id="login-btn" class="navbar__btn">
+                INICIAR SESIÓN
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content__info">
+            <h1 class="content__title">Crea tu cuenta</h1>
+            <p class="content__description">Por favor ingresa tus datos para ingresar como docente</p>
+            
+            <form class="form register">
+
+                <label class="form__label">
+                    <input required type="text" name="name" placeholder="Tu nombre" />
+                </label>
+
+                <label class="form__label">
+                    <input required type="email" name="email" placeholder="tucorreo@mail.com" />
+                </label>
+
+                <label class="form__label">
+                    <input required type="password" name="password" placeholder="Contraseña" />
+                </label>
+
+                <p class="form__error hidden" id="form-error">
+                    Este correo ya está en uso
+                </p>
+
+                <button class="form__btn" type="submit">
+                    CONTINUAR
+                </button>
+            </form>
+        </div>
+
+        <div class="content__illustrationcontainer">
+            <img class="content__illustration" src="data/homepage_illustration.png" alt="logo" />
+        </div>
+    </div>
+
+    <img id="icesi-logo" src="data/icesi-logo.png" alt="icesi-logo" />
+
+</body>
+
+</html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
+
+<script src="scripts/firebase.js"></script>
+<script src="scripts/register.js"></script>

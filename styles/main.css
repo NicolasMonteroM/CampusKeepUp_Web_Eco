@@ -318,21 +318,6 @@ input[type=button] {
   padding-left: 10%;
 }
 
-.content h1 {
-  font-weight: bold;
-  font-size: 40px;
-  font-family: "Dela Gothic One", cursive;
-  color: #2a3459;
-  padding-bottom: 30px;
-}
-
-.content p {
-  font-weight: 500;
-  font-size: 16px;
-  font-family: "Quicksand", sans-serif;
-  color: #9b9fad;
-}
-
 .content__info {
   height: 100%;
   width: 50%;
@@ -420,6 +405,74 @@ input[type=button] {
   }
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.form__btn {
+  color: white;
+  border: 0 !important;
+  background-color: #8ea6fd;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 50px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.form__btn:hover {
+  color: white;
+  background-color: #bbc53c;
+}
+
+.form ::-webkit-input-placeholder {
+  color: #758ad4e5;
+}
+
+.form :-ms-input-placeholder {
+  color: #758ad4e5;
+}
+
+.form ::-ms-input-placeholder {
+  color: #758ad4e5;
+}
+
+.form ::placeholder {
+  color: #758ad4e5;
+}
+
+.form input {
+  font-family: "Quicksand", sans-serif;
+  color: #758ad4e5;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  width: 80%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #758ad4;
+}
+
+.form input:focus {
+  outline: none;
+  border-bottom: 1px solid #bbc53c;
+}
+
+#form-error {
+  font-weight: 700;
+  color: #e67b34;
+  padding-top: 20px;
+}
+
 body {
   background-image: url("/data/CampusBG.png");
   height: 100vh;
@@ -427,5 +480,24 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Dela Gothic One", cursive;
+  color: #2a3459;
+  padding-bottom: 30px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #9b9fad;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

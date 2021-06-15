@@ -7,6 +7,7 @@ $font2: 'Dela Gothic One', cursive;
 @import "reset";
 @import "navbar";
 @import "home";
+@import "form";
 
 body {
     background-image: url("/data/CampusBG.png");
@@ -15,4 +16,23 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: $font2;
+    color: #2a3459;
+    padding-bottom: 30px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: $font;
+    color: #9b9fad;
+}
+
+.hidden {
+    display: none;
 }
