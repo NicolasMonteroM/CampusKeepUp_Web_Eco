@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
@@ -242,12 +243,62 @@ input[type=button] {
 }
 
 .navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 20vh;
 }
 
 .navbar__logo {
+  position: absolute;
+  left: 50px;
+  top: 50px;
   height: 100px;
   width: auto;
+}
+
+.navbar__btn {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 50px;
+  width: 200px;
+}
+
+.navbar #register-btn {
+  color: white;
+  border: 0 !important;
+  background-color: #8ea6fd;
+}
+
+.navbar #register-btn:hover {
+  color: white;
+  background-color: #BBC53C;
+}
+
+.navbar #login-btn {
+  color: #8ea6fd;
+  border: 2px solid #8ea6fd !important;
+  background-color: white;
+}
+
+.navbar #login-btn:hover {
+  color: white;
+  border: 0 !important;
+  background-color: #BBC53C;
 }
 
 .content {
@@ -264,31 +315,114 @@ input[type=button] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 10%;
 }
 
 .content h1 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "Dela Gothic One", cursive;
+  color: #2a3459;
+  padding-bottom: 30px;
+}
+
+.content p {
+  font-weight: 500;
+  font-size: 16px;
   font-family: "Quicksand", sans-serif;
-  color: #2A3459;
+  color: #9b9fad;
 }
 
 .content__info {
-  float: left;
   height: 100%;
   width: 50%;
 }
 
 .content__illustration {
-  float: right;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 600px;
+}
+
+.content__title {
+  width: 60%;
+}
+
+.content__description {
+  width: 70%;
+}
+
+.content__imagecontainer {
+  width: 60%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__image {
+  width: 150px;
+}
+
+#icesi-logo {
+  height: 70px;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10%;
+  }
+  .content__info {
+    height: 100%;
+    width: 100%;
+  }
+  .content__illustration {
+    height: auto;
+    width: 500px;
+  }
+  .content__title {
+    width: 100%;
+  }
+  .content__description {
+    width: 100%;
+  }
+  .content__imagecontainer {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 body {
   background-image: url("/data/CampusBG.png");
   height: 100vh;
-  /* You must set a specified height */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;

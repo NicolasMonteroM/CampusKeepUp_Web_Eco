@@ -1,7 +1,50 @@
 .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     padding: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20vh;
+
     &__logo {
+        position: absolute;
+        left: 50px;
+        top: 50px;
         height: 100px;
         width: auto;
+    }
+
+    &__btn {
+        font-family: $font;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-right: 20px;
+        height: 50px;
+        width: 200px;
+    }
+
+    #register-btn {
+        color: white;
+        border: 0 !important;
+        background-color: #8ea6fd;
+
+        &:hover {
+            color: white;
+            background-color: #BBC53C;
+        }
+    }
+
+    #login-btn {
+        color: #8ea6fd;
+        border: 2px solid #8ea6fd !important;
+        background-color: white;
+
+
+        &:hover {
+            color: white;
+            border: 0 !important;
+            background-color: #BBC53C;
+        }
     }
 }
